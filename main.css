@@ -1,0 +1,296 @@
+*{
+    margin:0;
+    padding: 0;
+    scroll-behavior: smooth;
+} 
+ 
+ 
+ .header{
+        color: #9B0F06;
+      background-color: aliceblue;
+      width:200px;
+      border: 5px solid #FFCF00;
+      border-radius: 20px;
+      margin:auto;
+      
+    }
+
+p{
+    color:#2C5EAD;
+    background-color: #E8EDF2;
+    width: 200px;
+    margin:auto;
+    border-radius: 20px;
+    border:5px solid #2F2FE4;
+    
+    
+    
+}
+
+img{
+    width: 200px;
+    border-radius: 20px;
+    border:5px solid #FFDE42;
+    transition: 0.8s;
+
+}
+
+a{
+    color:#9B0F06;
+    background-color:#E8EDF2;
+    padding: 20px;
+    margin:20px;
+    border-radius: 15px;
+    display:inline-block;
+    border:5px solid #134E8E;
+    
+
+
+    
+
+}
+body{
+    background-color:#134E8E;
+    text-align: center;
+    
+   
+}
+
+h1:hover{
+    color:#3A9AFF;
+}
+
+p:hover{
+    color:#15173D;
+    
+}
+
+img:hover{
+    width:300px;
+    
+}
+
+a:hover{
+    color:#5B23FF;
+}
+
+.alamat{
+    color:#00F7FF;
+}
+.lorem{
+    color:#FFCF00;
+}
+
+.alamat:hover{
+    background-color:#E8EDF2;
+    
+}
+
+.aboutme-1{
+    color:#00F7FF;
+    background-color:red;
+
+
+}
+ .html-1{
+    background-color: #2F2FE4;
+     width: 600px;
+     margin: auto;
+ }
+
+
+
+ .navbar{
+    display: flex;
+    background-color: antiquewhite;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+ } 
+
+ .menu ul{
+    display: flex;
+    gap: 15px;
+ }
+
+ .navbar h1{
+    font-weight: bold;
+    font-size: 24px;
+    color: #FFDE42;
+ }
+
+  .menu ul li a{
+    color: rgb(174, 111, 28);
+    text-decoration: none ;
+    font-size: 20px;
+    transition: 0.5s;
+ }
+
+ .menu ul li a:hover{
+    background-color: #FFDE42;
+    color: #d7d3bb;
+    transform: translateY(-3px);
+    padding: 10px 20px;
+    border-radius: 30%;
+ }
+.menu ul li{
+    list-style: none;
+}
+
+.nav-button a{
+    color: #5B23FF;
+    background-color: #1761ab;
+    padding: 10px 20px;
+    border:1px solid #c4ce12;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-button a:hover{
+    border: green;
+
+}
+.about-me{
+    display: flex;
+    justify-content: space-between;
+    background-color:slateblue;
+    padding: 10px 20px;
+    
+}
+    
+.about-me h1{
+    font-size: 50px;
+}
+.about-me p{
+    width: 600px;
+    background-color: slateblue;
+    border: none;
+    color: mediumseagreen;
+    font-size: 20px;
+    
+}
+.about-text{
+    text-align: start;
+    align-items: center;
+    margin-top: 20px;
+}
+.about-image img{
+width: 300px;
+}
+
+.about-text h1:hover{
+    background-color: #c4ce12;
+
+}
+#skills > h2{
+    font-size: 30px;
+    color: goldenrod;
+}
+
+.skill-container{
+    display: flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.skill-card{
+    width:250px;
+    background-color: navy;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 15px navy;
+    transition: 0.3s;
+}
+.skill-card h2{
+    color: grey;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.skill-card p{
+    border: none;
+    background: none;
+}
+.skill-card:hover{
+    transform: translateY(-10px);
+}
+
+.progress{
+    width: 100%;
+    height: 12px;
+    background-color: lightgrey;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.html{
+    width: 90%;
+    height: 100px;
+    background-color: red;
+
+}
+.CSS{
+    width:70%;
+    height: 100px;
+    background-color: red;
+}
+.JS{
+    width: 50%;
+    height: 100px;
+    background-color: red;
+}
+/* contact section */
+.contact{
+    width:1200px;
+    display:flex;
+    justify-content: space-between;
+}
+.contact-form{
+    background-color: #00F7FF;
+    padding: 30px;
+    border-radius: 20px;
+
+}
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.contact-form form label{
+    font-weight: bold;
+}
+.contact-form form input, .contact-form form textarea, .contact-form form select{
+    border: 2px solid red;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 6px 12px;
+}
+.contact-form form button{
+    margin-top: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #c4ce12;
+    color: #00F7FF;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 14px;
+}
+.contact-form form input:focus, .contact-form form textarea:focus, .contact-form form select{
+    border: 2px solid red;
+    outline: none;
+    margin: 80px auto;
+
+}
+.contact-maps iframe{
+    height: 480px;
+    border-radius: 20px;
+    width: 500px;
+}
+.contact-maps{
+    flex: 1;
+}
+/* end contact section */
