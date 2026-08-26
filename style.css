@@ -685,11 +685,89 @@ footer{
   background: var(--ocean-deep-2);
 }
 
+/* ===================== WAYPOINTS (index teaser) ===================== */
+.waypoint-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.4rem;
+  margin-bottom: 3rem;
+}
+.waypoint-card{
+  display: block;
+  background: var(--paper);
+  border: 1px solid rgba(22,60,54,.1);
+  border-radius: 20px;
+  padding: 1.8rem;
+  transition: transform .4s var(--ease), box-shadow .4s var(--ease), border-color .4s var(--ease);
+}
+.waypoint-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 24px 40px -20px rgba(22,60,54,.25);
+  border-color: var(--sunrise);
+}
+.waypoint-card .num{
+  font-family: var(--font-mono);
+  font-size: .75rem;
+  letter-spacing: .1em;
+  color: var(--glacier-blue);
+}
+.waypoint-card h3{ margin: .6rem 0 .4rem; font-size: 1.25rem; }
+.waypoint-card p{ margin: 0; opacity: .7; font-size: .92rem; }
+
+.cta-banner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  background: var(--alpine-teal);
+  color: var(--peak-fog);
+  border-radius: 24px;
+  padding: 2.2rem clamp(1.6rem, 4vw, 3rem);
+}
+.cta-banner h3{ margin: .3rem 0 0; font-size: 1.5rem; color: var(--paper); }
+
+/* ===================== SUBHERO (page3 banner) ===================== */
+.subhero{
+  position: relative;
+  min-height: 46vh;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  background: linear-gradient(180deg, #9FD2D6 0%, var(--peak-fog-2) 55%, var(--alpine-teal) 100%);
+  padding-top: 5rem;
+}
+.subhero .ridge{ position: absolute; bottom:0; left:0; width:100%; line-height:0; }
+.subhero-content{
+  position: relative;
+  z-index: 2;
+  width: min(1120px, 92%);
+  margin-inline: auto;
+  padding-bottom: 3rem;
+}
+.subhero h1{
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  color: var(--alpine-teal-2);
+}
+.subhero p{ color: #1c3733; max-width: 50ch; }
+.breadcrumb{
+  font-family: var(--font-mono);
+  font-size: .75rem;
+  letter-spacing: .08em;
+  color: var(--ocean-deep);
+  opacity: .8;
+  margin-bottom: 1rem;
+  display: inline-flex;
+  gap: .5em;
+}
+.breadcrumb a{ text-decoration: underline; text-underline-offset: 3px; }
+
 /* ===================== RESPONSIVE ===================== */
 @media (max-width: 900px){
   .about, .trail-grid, .contact-grid{ grid-template-columns: 1fr; }
   .about-portrait{ max-width: 320px; margin-inline: auto; }
   .elev-item{ grid-template-columns: 90px 1fr 70px; gap: 1rem; }
+  .waypoint-grid{ grid-template-columns: 1fr; }
 }
 
 @media (max-width: 760px){
@@ -712,6 +790,9 @@ footer{
   .hero-actions{ flex-direction: column; align-items: flex-start; }
   .row-2{ grid-template-columns: 1fr; }
   .crew-grid{ grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+  .cta-banner{ flex-direction: column; align-items: flex-start; }
+  .cta-banner .btn{ width: 100%; justify-content: center; }
+  .subhero{ min-height: 38vh; }
 }
 
 @media (max-width: 480px){

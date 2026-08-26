@@ -1,119 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="main.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Azzam Balya — Menyusuri Lembah &amp; Pesisir</title>
+<meta name="description" content="Tentang, keahlian, dan kontak Azzam Balya, siswa RPL A, Makassar.">
+<link rel="stylesheet" href="style.css">
 </head>
-<nav class="navbar">
-    <h1>website azam</h1>
-    <div class="menu">
-        <ul>
-            <li><a href="index.html">home</a></li>
-            <li> <a href="#about-me">about</a></li>
-            <li> <a href="#skills">skills</a></li>
-            <li> <a href="">contak</a></li>
-            
-        
-        </ul>
-    </div>
-    <div class="navbutton">
-        <a href="">hubungi saya</a>
-
-    </div>
-
-
-</nav> 
 <body>
-    <div class="html-1"data-aos="flip-right"data-aos-duration="1000">
- <h1 class="header">azambalya</h1>
- <h1 class="alamat">makassar</h1>
- <p class="lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero placeat deserunt, natus veritatis id soluta ut eos a at saepe facilis, deleniti accusantium suscipit cum, est aliquam nihil vitae nulla?</p>
- <p>saya adalah programer</p> 
- <img  src="azzam.jpeg" alt=""> <br>
- <a href="">https://instagram.com/mazabalya17</a>
+
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="brand">Azzam <small>PUNCAK&nbsp;→&nbsp;LAUT</small></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Beranda</a></li>
+    <li><a href="#about">Tentang</a></li>
+    <li><a href="#skills">Keahlian</a></li>
+    <li><a href="#trail">Rutinitas</a></li>
+    <li><a href="#contact">Kontak</a></li>
+  </ul>
+  <a href="#contact" class="btn btn-ghost nav-cta">Hubungi Saya</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Buka menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ================= SUBHERO ================= -->
+<header class="subhero">
+  <div class="ridge ridge--back" data-parallax="0.2">
+    <svg viewBox="0 0 1440 260" preserveAspectRatio="none"><path fill="#5FA9A6" d="M0 200 L120 120 L260 190 L420 70 L600 170 L760 90 L940 180 L1120 110 L1300 190 L1440 140 L1440 260 L0 260 Z"/></svg>
+  </div>
+  <div class="ridge ridge--mid" data-parallax="0.32">
+    <svg viewBox="0 0 1440 220" preserveAspectRatio="none"><path fill="#2E6F65" d="M0 180 L160 90 L340 160 L520 60 L700 150 L900 80 L1080 170 L1260 100 L1440 160 L1440 220 L0 220 Z"/></svg>
+  </div>
+  <div class="ridge ridge--front">
+    <svg viewBox="0 0 1440 160" preserveAspectRatio="none"><path fill="#163C36" d="M0 140 L200 60 L380 120 L560 40 L780 130 L980 55 L1180 125 L1360 70 L1440 100 L1440 160 L0 160 Z"/></svg>
+  </div>
+  <div class="subhero-content">
+    <p class="breadcrumb"><a href="index.html">Puncak</a> / Lembah &amp; Pesisir</p>
+    <h1>Menyusuri lebih dalam.</h1>
+    <p>Bagian ini isinya tentang saya, seberapa jauh saya sudah mendaki di dunia coding, rutinitas harian, dan cara menghubungi saya di ujung perjalanan.</p>
+  </div>
+</header>
+
+<!-- ================= ABOUT ================= -->
+<section class="on-teal section-pad" id="about">
+  <div class="container about">
+    <div class="about-portrait reveal">
+      <div class="frame">
+        <img src="azzam.jpeg" alt="Foto Azzam Balya">
+      </div>
+      <span class="pin">BASECAMP: KAMAR 2.6</span>
     </div>
-<section id="about-me"class="about-me">
-   <div class="about-text">
-    <h1>about me </h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, perspiciatis minus. Aliquid, exercitationem tenetur! Illum, accusamus corporis. Voluptates, quia corrupti sit nam, in dignissimos itaque distinctio nobis maxime, rem vero!</p>
-   </div>
-   <div class="about-image">
-    <img src="https://i.pravatar.cc/150" alt="">
-   </div>
-   
+    <div class="about-text">
+      <p class="eyebrow reveal" style="color:var(--sunrise-soft)">Tentang Saya</p>
+      <h2 class="reveal reveal-delay-1">Belajar itu seperti mendaki —<br>satu langkah, satu ketinggian baru.</h2>
+      <p class="about-lede reveal reveal-delay-1">Nama saya Azzam Balya, siswa jurusan RPL A yang berdomisili di Makassar. Saya adalah seorang programer pemula.</p>
+      <p class="about-body reveal reveal-delay-2">Sedang menekuni dunia pengembangan web selangkah demi selangkah — mulai dari struktur (HTML), keindahan (CSS), hingga logika (JavaScript). Di luar layar, saya menyalurkan energi lewat sepak bola.</p>
+      <div class="fact-grid reveal reveal-delay-3">
+        <div class="fact"><span class="k">Domisili</span><span class="v">Makassar</span></div>
+        <div class="fact"><span class="k">Kelas</span><span class="v">RPL A</span></div>
+        <div class="fact"><span class="k">Kamar</span><span class="v">2.6</span></div>
+        <div class="fact"><span class="k">Instagram</span><span class="v">@mazabalya17</span></div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="skills" class="skills">
-    <h2>My Skills</h2>
-    <div class="skill-container">
-        <div class="skill-card"data-aos="fade-right"data-aos-duration="1000">
-            <h2>HTML</h2>
-            <p>⭐⭐⭐💫⭐✡️</p>
-            <div class="progress">
-                <div class=" html"></div>
-            </div>
-        </div>
-        <div class="skill-card"data-aos="zoom-in"data-aos-duration="2000">
-            <h2>css</h2>
-             <p>⭐⭐⭐💫⭐✡️</p>
-             <div class="progress">
-                <div class=" CSS"></div>
-            </div>
-        </div>
-        <div class="skill-card" data-aos="fade-left"data-aos-duration="1000">
-            <h2>JS</h2>
-            <p>⭐⭐⭐💫⭐✡️</p>
-            <div class="progress">
-                <div class=" JS"></div>
-            </div>
-        </div>
+<!-- ================= SKILLS ================= -->
+<section class="skills section-pad" id="skills">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow" style="color:var(--glacier-blue)">Ketinggian yang Sudah Didaki</p>
+      <h2>Keahlian, diukur seperti elevasi.</h2>
+    </div>
+    <div class="elevation-list">
+      <div class="elev-item reveal">
+        <span class="name">HTML<small>Struktur & fondasi</small></span>
+        <div class="gauge"><div class="gauge-fill" data-fill="90"></div></div>
+        <span class="amt">90%</span>
+      </div>
+      <div class="elev-item reveal reveal-delay-1">
+        <span class="name">CSS<small>Bentuk & suasana</small></span>
+        <div class="gauge"><div class="gauge-fill" data-fill="70"></div></div>
+        <span class="amt">70%</span>
+      </div>
+      <div class="elev-item reveal reveal-delay-2">
+        <span class="name">JavaScript<small>Logika & gerak</small></span>
+        <div class="gauge"><div class="gauge-fill" data-fill="50"></div></div>
+        <span class="amt">50%</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRAIL / SCHEDULE + HOBBY ================= -->
+<section class="on-teal section-pad" id="trail">
+  <div class="container trail-grid">
+    <div>
+      <p class="eyebrow reveal" style="color:var(--sunrise-soft)">Jejak Perjalanan</p>
+      <h2 class="reveal reveal-delay-1" style="color:var(--paper)">Jadwal Belajar</h2>
+      <div class="trail-log reveal reveal-delay-2">
+        <div class="stop"><h3 style="color:var(--paper)">01 · HTML</h3><p>Menyusun fondasi setiap halaman.</p></div>
+        <div class="stop"><h3 style="color:var(--paper)">02 · CSS</h3><p>Memberi rupa dan suasana pada struktur.</p></div>
+        <div class="stop"><h3 style="color:var(--paper)">03 · JavaScript</h3><p>Menghidupkan interaksi & logika.</p></div>
+      </div>
+    </div>
+    <div class="hobby-card reveal reveal-delay-2">
+      <p class="eyebrow">Di Luar Layar</p>
+      <h3>Hobi</h3>
+      <p style="opacity:.75; margin-bottom:1.2rem;">Selain ngoding, saya juga senang turun ke lapangan.</p>
+      <span class="hobby-tag">⚽ Sepak Bola</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CREW / ROOM ================= -->
+<section class="on-teal" style="padding-bottom: 5rem;">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow" style="color:var(--sunrise-soft)">Basecamp</p>
+      <h2 style="color:var(--paper)">Teman Sekamar</h2>
+    </div>
+    <div class="crew-grid">
+      <div class="crew-card reveal"><span class="num">CREW 01</span><h3>Azam</h3><p>RPL A · Kamar 2.6</p></div>
+      <div class="crew-card reveal reveal-delay-1"><span class="num">CREW 02</span><h3>Azam</h3><p>RPL A · Kamar 2.6</p></div>
+      <div class="crew-card reveal reveal-delay-2"><span class="num">CREW 03</span><h3>Azam</h3><p>RPL A · Kamar 2.6</p></div>
+      <div class="crew-card reveal reveal-delay-3"><span class="num">CREW 04</span><h3>Azam</h3><p>RPL A · Kamar 2.6</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WAVE DIVIDER ================= -->
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path fill="#0A2E45" d="M0 40 C 240 100, 480 0, 720 50 C 960 100, 1200 10, 1440 60 L1440 120 L0 120 Z"/></svg>
+</div>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact-sec section-pad" id="contact">
+  <div class="bubble" style="width:14px;height:14px;left:8%;animation-duration:9s;"></div>
+  <div class="bubble" style="width:8px;height:8px;left:22%;animation-duration:13s;animation-delay:2s;"></div>
+  <div class="bubble" style="width:20px;height:20px;left:40%;animation-duration:11s;animation-delay:1s;"></div>
+  <div class="bubble" style="width:10px;height:10px;left:63%;animation-duration:15s;animation-delay:3s;"></div>
+  <div class="bubble" style="width:16px;height:16px;left:80%;animation-duration:10s;animation-delay:.5s;"></div>
+  <div class="bubble" style="width:12px;height:12px;left:92%;animation-duration:12s;animation-delay:4s;"></div>
+
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow" style="color:var(--sunrise-soft)">Titik Akhir Perjalanan</p>
+      <h2>Mari Berlabuh &amp; Berkirim Pesan</h2>
+      <p>Ada proyek, pertanyaan, atau sekadar ingin menyapa? Kirimkan pesan seperti botol ke laut.</p>
     </div>
 
-
-</section>
- 
-<section id="contact" class="contact">
-    <div class="contact-form"data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom"data-aos-duration="3000">
+    <div class="contact-grid">
+      <div class="form-card reveal">
         <form action="https://formsubmit.co/balyaazzam3@gmail.com" method="post">
-            <label for="">nama</label>
-            <input type="text" placeholder="nama anda....." name="Nama">
-            <label >email</label>
-            <input type="email" placeholder="email anda...." name="Email">
-            <label >umur</label>
-            <input type="number" placeholder="umur anda...." name="Usia">
-            <label >Gender</label>
-            <select name="" id="">
-                <option value="">pilih gender anda</option>
-                <option value="pria">pria</option>
-                <option value="wanita">wanita</option>
-            </select>
-            <textarea name="" id=""></textarea>
-            <button type="submit">kirim pesan</button>
+          <div class="row-2">
+            <div class="field">
+              <label for="nama">Nama</label>
+              <input id="nama" type="text" placeholder="Nama kamu..." name="Nama" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="Email kamu..." name="Email" required>
+            </div>
+          </div>
+          <div class="row-2">
+            <div class="field">
+              <label for="usia">Umur</label>
+              <input id="usia" type="number" placeholder="Umur kamu..." name="Usia">
+            </div>
+            <div class="field">
+              <label for="gender">Gender</label>
+              <select id="gender" name="Gender">
+                <option value="">Pilih gender</option>
+                <option value="pria">Pria</option>
+                <option value="wanita">Wanita</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" name="Pesan" rows="4" placeholder="Tulis pesanmu di sini..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-solid" style="width:100%; justify-content:center;">Kirim Pesan →</button>
         </form>
-    </div>
-    <div class="contact-maps">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11539.938142382489!2d107.06127097141518!3d-6.542502928768488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69bb000e1ac8b7%3A0xa18f0995cdb37e7b!2sSamara%20village!5e0!3m2!1sid!2sid!4v1786603937059!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-    </div>
+      </div>
 
-
+      <div class="reveal reveal-delay-1">
+        <div class="map-card">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11539.938142382489!2d107.06127097141518!3d-6.542502928768488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69bb000e1ac8b7%3A0xa18f0995cdb37e7b!2sSamara%20village!5e0!3m2!1sid!2sid!4v1786603937059!5m2!1sid!2sid" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="socials">
+          <a href="https://instagram.com/mazabalya17" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+        <a href="index.html" class="btn btn-ghost" style="margin-top:1.5rem; color:var(--peak-fog); border-color:rgba(255,255,255,.4);">← Kembali ke Puncak</a>
+      </div>
+    </div>
+  </div>
 </section>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+
+<footer>© 2026 AZZAM BALYA — DIBUAT DENGAN HTML, CSS &amp; SEMANGAT MENDAKI.</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
-
-<style>
-   
-
-</style>
-
-
-
-
-
